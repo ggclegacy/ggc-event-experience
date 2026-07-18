@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Groomed Gent Co. Event Experience",
-  description: "Scan to shop Groomed Gent Co. and receive 15% off your next online order with LEGACY15.",
+  description: "Scan to shop Groomed Gent Co. and receive 20% off your next online order with LEGACY20.",
   applicationName: "Groomed Gent Co. Event Experience",
   manifest: "/manifest.webmanifest",
   openGraph: {

@@ -4,6 +4,12 @@
 
 **App complete; external verification pending.** The production build, lint, type check, and automated tests pass. The QR is generated as stationary SVG from the exact centralized Shopify discount URL. The app is not labeled fully complete because physical multi-device scanning, Shopify discount-rule verification, and deployment require external access/action.
 
+## Latest campaign update — LEGACY20
+
+- **Status:** App update complete; Shopify verification pending.
+- **Result:** Changed the offer to **20% off your next online order**, coupon to **LEGACY20**, and QR destination to `https://groomedgentco.com/discount/LEGACY20?redirect=%2F`. Updated metadata, automated safeguards, and maintainer documentation together.
+- **External action:** An authorized Shopify administrator must create, activate, and checkout-test the matching `LEGACY20` 20% discount before event use.
+
 ## Latest enhancement — Animated hero emblem
 
 - **Status:** Complete
@@ -11,6 +17,12 @@
 - **Result:** Added a layered futuristic gold border emblem, counter-rotating rings, geometric nodes and axes, a breathing logo scale, and a synchronized restrained gold aura. The effect applies only to the Display-mode hero; the compact Catalog logo remains static and the QR remains untouched.
 - **Accessibility:** All emblem geometry is decorative and hidden from assistive technology. `prefers-reduced-motion: reduce` removes every emblem and logo animation.
 - **Validation:** `npm run typecheck`, `npm run lint`, `npm test` (4/4), and `npm run build` passed.
+
+### Emblem refinement
+
+- Removed the previous square-style ring nodes and replaced them with exactly four faceted gold diamond markers at the cardinal points.
+- Refined the outer border into a segmented conic-gold motion ring and retained the smooth counter-rotating inner ring, glow, and breathing motion.
+- Validation remains green: typecheck, lint, 4/4 tests, and production build.
 
 ## Latest enhancement — Futuristic luxury environment
 
@@ -57,7 +69,7 @@ Results: TypeScript passed; ESLint passed; 4/4 tests passed; Next.js production 
 ## Remaining authoritative/external actions
 
 - **Products/pricing:** Public-store prices were captured on 2026-07-18. Reconfirm availability and prices immediately before each event; event inventory was not inferred from online availability.
-- **Shopify `LEGACY15`:** **Unverified.** An authorized Shopify administrator must create/activate the 15% discount, set eligibility/usage/date rules, and complete a checkout test using the exact encoded destination.
+- **Shopify `LEGACY20`:** **Unverified.** An authorized Shopify administrator must create/activate the 20% discount, set eligibility/usage/date rules, and complete a checkout test using the exact encoded destination.
 - **Physical QR scans:** **Pending.** No device results may be claimed. Test at least two phones with different camera/OS combinations from laptop/tablet displays at several practical distances.
 - **Deployment/Vercel:** Not authorized or attempted; no deployment URL exists.
 - **Browser/manual QA:** The in-app browser backend was unavailable. Repeat visual checks at 375×667, 390×844, 768×1024, 1024×768, and 1440×900, plus rotation/high zoom/reduced motion/keyboard checks.
@@ -65,6 +77,6 @@ Results: TypeScript passed; ESLint passed; 4/4 tests passed; Next.js production 
 
 ## Next safe actions
 
-1. Configure and verify `LEGACY15` in Shopify Admin.
+1. Configure and verify `LEGACY20` in Shopify Admin.
 2. Run the physical visual/interaction/QR matrix above and record devices/results here.
 3. Re-run the full command set, then deploy to Vercel only when explicitly authorized.

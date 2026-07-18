@@ -8,15 +8,15 @@ import { supportsFullscreen, supportsWakeLock } from "@/hooks/useDisplayControls
 
 describe("event safeguards", () => {
   it("keeps the exact centralized campaign values", () => {
-    expect(eventContent.discountUrl).toBe("https://groomedgentco.com/discount/LEGACY15?redirect=%2F");
-    expect(eventContent.coupon).toBe("LEGACY15");
+    expect(eventContent.discountUrl).toBe("https://groomedgentco.com/discount/LEGACY20?redirect=%2F");
+    expect(eventContent.coupon).toBe("LEGACY20");
   });
 
   it("renders scan-critical copy and passes the exact QR destination", () => {
     render(<ScanPanel />);
     expect(screen.getByRole("heading", { name: "SCAN TO SHOP" })).toBeVisible();
-    expect(screen.getByText("15% off your next online order")).toBeVisible();
-    expect(screen.getByText("LEGACY15")).toBeVisible();
+    expect(screen.getByText("20% off your next online order")).toBeVisible();
+    expect(screen.getByText("LEGACY20")).toBeVisible();
     expect(screen.getByRole("link", { name: "groomedgentco.com" })).toBeVisible();
     expect(screen.getByTestId("qr-frame")).toHaveAttribute("data-qr-value", eventContent.discountUrl);
   });

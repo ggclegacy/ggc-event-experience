@@ -17,4 +17,4 @@ Edit `src/data/products.ts`. The initial prices were verified against the public
 
 ## Shopify requirement
 
-The QR encodes `https://groomedgentco.com/discount/LEGACY15?redirect=%2F`. An authorized store administrator must create and activate `LEGACY15` in Shopify for 15% off the next online order, set the intended eligibility, usage, and date rules, and test it before the promotion is represented as operational.
+The QR encodes `https://groomedgentco.com/discount/LEGACY20?redirect=%2F`. An authorized store administrator must create and activate `LEGACY20` in Shopify for 20% off the next online order, set the intended eligibility, usage, and date rules, and test it before the promotion is represented as operational.

@@ -12,6 +12,10 @@ export function BrandHeader({ compact = false }: { compact?: boolean }) {
             <span className="brand__emblem-ring brand__emblem-ring--inner" />
             <span className="brand__emblem-axis brand__emblem-axis--vertical" />
             <span className="brand__emblem-axis brand__emblem-axis--horizontal" />
+            <span className="brand__emblem-diamond brand__emblem-diamond--top" />
+            <span className="brand__emblem-diamond brand__emblem-diamond--right" />
+            <span className="brand__emblem-diamond brand__emblem-diamond--bottom" />
+            <span className="brand__emblem-diamond brand__emblem-diamond--left" />
           </div>
         )}
         <Image
