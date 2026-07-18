@@ -10,6 +10,13 @@
 - **Result:** Changed the offer to **20% off your next online order**, coupon to **LEGACY20**, and QR destination to `https://groomedgentco.com/discount/LEGACY20?redirect=%2F`. Updated metadata, automated safeguards, and maintainer documentation together.
 - **External action:** An authorized Shopify administrator must create, activate, and checkout-test the matching `LEGACY20` 20% discount before event use.
 
+## Latest visual update — Hero scale and QR palette
+
+- **Status:** Complete
+- **Result:** Increased the Display-mode hero emblem/logo treatment by exactly 30% across desktop, tablet, phone, and short-landscape sizing. Changed the QR to near-black modules on a light luxury-gold background with a restrained Legacy Gold frame.
+- **Scan safety:** Retained high error correction and the full four-module quiet zone. The light gold field preserves strong black-module contrast; QR geometry and position remain motionless.
+- **Validation:** Typecheck, lint, 4/4 tests, and production build passed.
+
 ## Latest enhancement — Animated hero emblem
 
 - **Status:** Complete
