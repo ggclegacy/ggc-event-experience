@@ -4,6 +4,22 @@
 
 **App complete; external verification pending.** The production build, lint, type check, and automated tests pass. The QR is generated as stationary SVG from the exact centralized Shopify discount URL. The app is not labeled fully complete because physical multi-device scanning, Shopify discount-rule verification, and deployment require external access/action.
 
+## Latest enhancement — Animated hero emblem
+
+- **Status:** Complete
+- **Files changed:** `src/components/BrandHeader.tsx`, `src/app/globals.css`
+- **Result:** Added a layered futuristic gold border emblem, counter-rotating rings, geometric nodes and axes, a breathing logo scale, and a synchronized restrained gold aura. The effect applies only to the Display-mode hero; the compact Catalog logo remains static and the QR remains untouched.
+- **Accessibility:** All emblem geometry is decorative and hidden from assistive technology. `prefers-reduced-motion: reduce` removes every emblem and logo animation.
+- **Validation:** `npm run typecheck`, `npm run lint`, `npm test` (4/4), and `npm run build` passed.
+
+## Latest enhancement — Futuristic luxury environment
+
+- **Status:** Complete
+- **Files changed:** `src/components/AmbientBackground.tsx`, `src/app/globals.css`
+- **Result:** Added a deep imperial atmospheric vault, perspective technical floor grid, architectural edge frames, gold circuit geometry, horizon lighting, rising micro-particles, and a slow cinematic light sweep. Layering, opacity, and vignette treatment keep the environment masculine and restrained rather than visually noisy.
+- **Scan safety/accessibility:** The entire environment remains decorative, behind all page content, non-interactive, and excluded from assistive technology. No background element enters the QR quiet zone. Reduced-motion mode freezes all environmental motion.
+- **Validation:** `npm run typecheck`, `npm run lint`, `npm test` (4/4), and `npm run build` passed.
+
 ## Completed prompts and validation
 
 | # | Prompt | Status | Files / decisions | Validation |
